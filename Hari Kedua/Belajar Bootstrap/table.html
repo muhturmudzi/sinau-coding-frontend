@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        /* .table tr,
+        th {
+            text-align: center;
+        } */
+
+        body {
+            min-height: 100vh;
+            align-items: center;
+            display: flex;
+        }
+
+        .container {
+            padding-top: 15px;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th colspan="2" style="text-align: center">Jenis Kelamin</th>
+                    <th scope="col" style="text-align: right">Uang saku</th>
+                </tr>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col" style="text-align: center">Jenis Kelamin</th>
+                    <th scope="col" style="text-align: right">Uang Saku</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="2" scope="row">1</th>
+                    <td rowspan="2">Mark</td>
+                    <td style="text-align: center">L</td>
+                    <td style="text-align: right">Rp. 5000,00</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">L</td>
+                    <td style="text-align: right">Rp. 5000,00</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Larry</td>
+                    <td style="text-align: center">L</td>
+                    <td style="text-align: right">Rp. 5000,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

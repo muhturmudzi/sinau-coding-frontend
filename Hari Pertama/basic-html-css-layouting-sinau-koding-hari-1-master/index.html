@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Layouting web sederhana dengan html dan css</title>
+    <style>
+        /* header */
+        #header {
+            background-color: #0a0a0a;
+            padding: 18px;
+            margin: auto;
+        }
+
+        #header p {
+            color: white;
+            font-size: 45px;
+            font-weight: bold;
+            margin: 16px 0;
+        }
+
+        body,
+        html,
+        div {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        /* navigation */
+        #nav {
+            background-color: grey;
+        }
+
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav ul li {
+            padding: 15px 20px;
+            display: inline-block;
+            border-right: 1px solid black;
+        }
+
+        #nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* content */
+        #content-wrapper {
+            display: block;
+            overflow: auto;
+        }
+
+        /* main-content (kiri) */
+        #content-wrapper #main-content {
+            width: 70%;
+            float: left;
+            box-sizing: border-box;
+            padding: 16px;
+        }
+
+        /* main-content (kiri) post-item */
+        #content-wrapper #main-content .post-item {
+            display: block;
+            overflow: auto;
+            border-bottom: 1px solid grey;
+            padding: 15px 0;
+        }
+
+        #content-wrapper #main-content .post-item .post-image {
+            width: 20%;
+            height: auto;
+            float: left;
+            box-sizing: border-box;
+            padding-right: 15px;
+        }
+
+        #content-wrapper #main-content .post-item .post-image img {
+            width: 100%;
+        }
+
+        #content-wrapper #main-content .post-item .post-content {
+            width: 70%;
+            float: left;
+        }
+
+        #content-wrapper #main-content .post-item .post-content p {
+            font-size: 14px;
+        }
+
+        #content-wrapper #main-content .post-item .post-content a {
+            text-decoration: none;
+            color: orangered;
+        }
+
+        #content-wrapper #main-content .post-item .post-content h4 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        /* sidebar (kanan) */
+        #content-wrapper #sidebar {
+            width: 30%;
+            float: left;
+            background-color: gainsboro;
+            box-sizing: border-box;
+            padding: 16px;
+        }
+
+        #content-wrapper #sidebar p {
+            margin-top: 0;
+            border-bottom: 1px solid black;
+        }
+
+        #content-wrapper #sidebar-links ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #content-wrapper #sidebar-links ul li {
+            margin-bottom: 15px;
+        }
+
+        #content-wrapper #sidebar-links ul li a {
+            color: orangered;
+            text-decoration: none;
+        }
+
+        #footer {
+            background-color: #0a0a0a;
+            margin: auto;
+            padding: 18px;
+        }
+
+        #footer p {
+            color: white;
+            text-align: center
+        }
+
+        #footer p span {
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <p>HTML 5</p>
+    </div>
+
+    <div id="nav">
+        <ul>
+            <li><a href="a">Link 1</a></li>
+            <li><a href="a">Link 2</a></li>
+            <li><a href="a">Link 3</a></li>
+            <li><a href="a">Link 4</a></li>
+            <li><a href="a">Link 5</a></li>
+        </ul>
+    </div>
+
+    <div id="content-wrapper">
+        <div id="main-content">
+            <div class="post-item">
+                <div class="post-image">
+                    <img src="zara.jpg" alt="Gambar">
+                </div>
+
+                <div class="post-content">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Aliqua minim ipsum enim non culpa ea consectetur excepteur non velit voluptate eiusmod in. Minim
+                        nulla laborum nostrud laboris deserunt veniam laboris. Veniam commodo culpa nostrud officia
+                        laborum excepteur adipisicing. Exercitation id velit eu elit ut incididunt excepteur.</p>
+                    <a href="a">Read More</a>
+                </div>
+            </div>
+            <div class="post-item">
+                <div class="post-image">
+                    <img src="nabilah.jpg" alt="Gambar">
+                </div>
+
+                <div class="post-content">
+                    <h4>Lorem Ipsum</h4>
+                    <p>Aliqua minim ipsum enim non culpa ea consectetur excepteur non velit voluptate eiusmod in. Minim
+                        nulla laborum nostrud laboris deserunt veniam laboris. Veniam commodo culpa nostrud officia
+                        laborum excepteur adipisicing. Exercitation id velit eu elit ut incididunt excepteur.</p>
+                    <a href="a">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <p><b>Sidebar Link</b></p>
+            <div id="sidebar-links">
+                <ul>
+                    <li><a href="b">Link 1</a></li>
+                    <li><a href="b">Link 2</a></li>
+                    <li><a href="b">Link 3</a></li>
+                    <li><a href="b">Link 4</a></li>
+                </ul>
+            </div>
+
+            <p><b>Other Widgets</b></p>
+            <div id="sidebar-description">
+                Ut veniam ipsum eu proident. Officia est sint irure duis irure cillum velit veniam nostrud.
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Copyright <span>your site</span>. All right reserved</p>
+    </div>
+
+</body>
+
+</html>

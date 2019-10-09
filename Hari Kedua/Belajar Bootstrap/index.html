@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Belajar Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        .media img {
+            width: 100px;
+        }
+
+        .media a {
+            color: orange;
+        }
+
+        .media p {
+            color: black;
+        }
+
+        .container-fluid .media {
+            border-bottom: 1px solid black;
+            padding: 15px;
+        }
+
+        .jumbotron {
+            background-color: black;
+            margin-bottom: 0;
+            font-size: 45px;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+
+        .jumbotron h1,
+        p {
+            color: white;
+        }
+
+        .nav-container {
+            background-color: #dbdbdb;
+        }
+
+        .nav-item a {
+            color: black;
+        }
+
+        .col-4 {
+            padding: 15px;
+        }
+
+        .col-4 p {
+            color: black;
+            padding-left: 50px;
+        }
+
+        .col-4 h5 {
+            border-bottom: 1px solid black;
+            padding: 5px;
+        }
+
+        .list-group {
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul li {
+            background-color: transparent;
+            border: none;
+            padding-left: 0;
+        }
+
+        .sidebar ul li a {
+            color: orangered;
+        }
+
+        .page-footer {
+            background-color: black;
+            color: white;
+        }
+
+        .page-footer a {
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">HTML 5</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+    </div>
+
+    <div class="nav-container">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 4</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8" style="background-color: white ">
+                <div class="row">
+                    <div class="media">
+                        <img class="align-self-center mr-3" src="images/zara.jpg" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Media heading</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                sollicitudin.
+                                Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum
+                                nunc
+                                ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="media">
+                        <img class="align-self-center mr-3" src="images/nabilah.jpg" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Media heading</h5>
+                            <p>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                sollicitudin.
+                                Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum
+                                nunc
+                                ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="media">
+                        <img class="align-self-center mr-3" src="images/nabilah.jpg" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Media heading</h5>
+                            <p>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                sollicitudin.
+                                Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum
+                                nunc
+                                ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4" style="background-color: #cfcfcf">
+                <h5>Sidebar Links</h5>
+                <div class="sidebar">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="">Cras justo odio</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="">Dapibus ac facilisis in</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="">Morbi leo risus</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="">Porta ac consectetur ac</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="">Vestibulum at eros</a>
+                        </li>
+                    </ul>
+                </div>
+                <h5>Other Widgets</h5>
+                <div class="sidebar-description">
+                    Labore enim irure reprehenderit consequat occaecat.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            Copyright <a href="">your site</a>. All rights reserved
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+
+</html>
