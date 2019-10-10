@@ -13,11 +13,32 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hello mamen</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Makan cuuuyy!!!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="padding-left: 0; padding-right: 0">
         <div class="d-flex">
-            <div class="p-2 flex-fill" style="width: 250px; height:750px; background-color: #ad1424;">
+            <div class="p-2 flex-fill" style="min-width: 250px; min-height:100vh; background-color: #db1540;">
                 <div class="sidebar">
-                    <h4 class="d-flex justify-content-center" style="color: white">Onlineshop.com</h4>
+                    <h4 class="text-center" style="color: white; margin: 20px;">Onlineshop.com</h4>
                     <div class="nav-container">
                         <ul class="list-group">
                             <li class="list-group-item border-0" style="background-color: transparent">
@@ -25,7 +46,9 @@
                                     <span class="mr-2">
                                         <i class="material-icons">dashboard</i>
                                     </span>
-                                    Dashboard
+                                    <span>
+                                        Dashboard
+                                    </span>
                                 </a>
                             </li>
                             <li class="list-group-item border-0" style="background-color: transparent">
@@ -33,7 +56,9 @@
                                     <span class="mr-2">
                                         <i class="material-icons">perm_contact_calendar</i>
                                     </span>
-                                    Kontak
+                                    <span>
+                                        Kontak
+                                    </span>
                                 </a>
                             </li>
                         </ul>
@@ -42,25 +67,165 @@
             </div>
             <div class="p-2 flex-fill" style="width: 100%; ;background-color: whitesmoke">
                 <div class="content">
-                    <h4 class="d-flex justify-content-start" style="color: black">Dashboard</h4>
+                    <h4 class="d-flex justify-content-start" style="margin: 1.5rem; color: rgb(77, 71, 71)">Dashboard
+                    </h4>
                     <div class="row">
                         <div class="col-4">
-                            <div class="d-flex">
-                                <div class="p-2 flex-fill">Growth</div>
-                                <div class="p-2 flex-fill">Flex item</div>
+                            <div class="shadow p-4 mb-4 bg-white rounded" style="margin: auto">
+                                <div class="d-flex" style="margin-bottom: 4px;">
+                                    <div class="p-2 flex-fill">
+                                        <h5>Growth</h5>
+                                    </div>
+                                    <div class="btn btn-success">
+                                        <i class="material-icons">trending_up</i>
+                                    </div>
+                                </div>
+                                <h2 style="margin-bottom: 1rem">36,254</h2>
+                                <div class="d-flex align-items-center">
+                                    <i class="material-icons text-danger">arrow_downward</i>
+                                    <span>5,27% Since last month</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-4"></div>
-                        <div class="col-4"></div>
+                        <div class="col-4">
+                            <div class="shadow p-4 mb-4 bg-white rounded" style="margin: auto">
+                                <div class="d-flex" style="margin-bottom: 4px;">
+                                    <div class="p-2 flex-fill">
+                                        <h5>Costumer</h5>
+                                    </div>
+                                    <div class="btn btn-secondary">
+                                        <i class="material-icons">people</i>
+                                    </div>
+                                </div>
+                                <h2 style="margin-bottom: 1rem">36,254</h2>
+                                <div class="d-flex align-items-center">
+                                    <i class="material-icons text-danger">arrow_downward</i>
+                                    <span>5,27% Since last month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="shadow p-4 mb-4 bg-white rounded" style="margin: auto">
+                                <div class="d-flex" style="margin-bottom: 4px;">
+                                    <div class="p-2 flex-fill">
+                                        <h5>Orders</h5>
+                                    </div>
+                                    <div class="btn btn-primary">
+                                        <i class="material-icons">trending_up</i>
+                                    </div>
+                                </div>
+                                <h2 style="margin-bottom: 1rem">36,254</h2>
+                                <div class="d-flex align-items-center">
+                                    <i class="material-icons text-success">arrow_upward</i>
+                                    <span>5,27% Since last month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="shadow p-4 mb-4 bg-white rounded" style="margin: auto">
+                                <div class="d-flex" style="margin-bottom: 4px;">
+                                    <div class="p-2 flex-fill">
+                                        <h5>Tabel</h5>
+                                    </div>
+                                </div>
+                                <table class="table table-bordered">
+                                    <thead class="thead thead-dark">
+                                        <tr>
+                                            <th colspan="2" style="text-align: center">Jenis Kelamin</th>
+                                            <th scope="col" style="text-align: right">Uang saku</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">Nama</th>
+                                            <th scope="col" style="text-align: center">Jenis Kelamin</th>
+                                            <th scope="col" style="text-align: right">Uang Saku</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="2">Hendryk</td>
+                                            <td style="text-align: center">L</td>
+                                            <td style="text-align: right">Rp. 5000,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center">L</td>
+                                            <td style="text-align: right">Rp. 5000,00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Larry</td>
+                                            <td style="text-align: center">L</td>
+                                            <td style="text-align: right">Rp. 5000,00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="shadow p-4 mb-4 bg-primary rounded" style="color: white; text-align: center">
+                                <h1><b>25%</b></h1>
+                                <h3 style="margin-bottom: 1.5rem">Kenaikan Harga</h3>
+                                <div class="btn btn-primary btn-outline-light" style="border-block-color: white">Read
+                                    More
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Tugas</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Light card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        Go Somewhere
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="shadow p-4 mb-4 bg-white rounded" style="margin: auto">
+                                <div class="d-flex" style="margin-bottom: 4px;">
+                                    <div class="p-2 flex-fill">
+                                        <h5>Champaign</h5>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <i class="material-icons md-100 md-dark"
+                                        style="text-align: center">emoji_flags</i>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <i class="text-secondary material-icons md-18 mb-4">send</i>
+                                        <h3 class="text-secondary">6,510</h3>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="dott mr-2 bg-primary"></div>
+                                            <p>Total Sent</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="text-secondary material-icons md-18 mb-4">email</i>
+                                        <h3 class="text-secondary">322</h3>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="dott mr-2 bg-info"></div>
+                                            <p>Reached</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="text-secondary material-icons md-18 mb-4">face</i>
+                                        <h3 class="text-secondary">121</h3>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="dott mr-2 bg-warning"></div>
+                                            <p>Opened</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-    </div>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
 </body>
 
 </html>
