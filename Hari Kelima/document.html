@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+    <p id="demo1">Click the button to change the text in this paragraph.</p>
+    <p name="demo1">Click the button to change the text in this paragraph.</p>
+    <p name="demo1">Click the button to change the text in this paragraph.</p>
+
+    <div class="demo2">Click the button to change the text in this paragraph.</div>
+
+    <input type="text" name="nama" value="jojo">
+    <p id="demo3">Click the button to change the text in this paragraph.</p>
+
+    <h6 id="demo4">hollaaaa.</h6>
+    <h5 id="demo6">gsdf</h5>
+
+    <button>By Id</button>
+    <button>By Class Name</button>
+    <button>By Nama</button>
+    <button>by tag</button>
+    <button>text node</button>
+    <!-- <button onclick="Id()">byId</button> -->
+    <!-- <button onclick="Cls()">byclass</button>
+    <button onclick="Nm()">byname</button>
+    <button onclick="Tag()">bytag</button>
+
+    <button onclick="textNode()">textNode</button> -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script>
+
+
+        function Id() {
+            // document.getElementById("demo1").innerHTML = "Hello World by id";
+            $("#demo1").html("Hello world by id jquery");
+        }
+
+        function Cls() {
+            // var x = document.getElementsByClassName("demo2");
+            // x[0].innerHTML = "Hello World by cls";
+            $(".demo2").html("by class jquery");
+        }
+
+        function Nm() {
+            // var y = document.getElementsByName("nama")[0].tagName;
+            // document.getElementById("demo3").innerHTML = y;
+
+            // $("[name='demo1']:eq(0)").html("aa en jee aa yee");
+            $("[name='demo1']").html("aa en jee aa yee");
+        }
+
+        function Tag() {
+            // var z = document.getElementsByTagName("h6");
+            // document.getElementId("demo3").innerHTML = z[0].innerHTML;
+
+            $("p").html("mantaaappp");
+        }
+
+        function textNode() {
+            var h = document.createElement("h1");
+            var t = document.createTextNode("holaaaaa.")
+            // h.appendChild(t);
+            // // document.body.appendChild(h);
+            // document.getElementById("demo3").appendChild(h);
+
+
+            var x = $(h).append(t);
+            $("#demo1").appendChild(x);
+        }
+
+        $("button:eq(0)").click(Id);
+        $("button:eq(1)").click(Cls);
+        $("button:eq(2)").click(Nm);
+        $("button:eq(3)").click(Tag);
+        $("button:eq(4)").click(textNode);
+    </script>
+
+    
+</body>
+
+</html>
