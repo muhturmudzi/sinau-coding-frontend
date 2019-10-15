@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{message}}</h1>
+
+        <div v-for="(item,index) in messages">
+            <h1>{{item}}={{index}}</h1>
+        </div>
+
+        <button v-on:click="tambahSatu()">Add</button>
+        <p>Button sudah di klik sebanyak <b>{{counter}}</b> kali</p>
+
+        <input v-model="inputText"> <br><br>
+        {{inputText}}
+
+        <button-counter></button-counter>
+        <button-click :count="count" @counting="counting"></button-click>
+
+        <table>
+            <thead>
+                
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        Vue.component('button-counter',{
+            data: function(){
+                return {
+                    count:0
+                }
+            },
+            template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+        })
+
+        Vue.component('button-click',{
+            props: ['count'],
+            template: '<button v-on:click="$emit(\'counting\')">You click me {{count}} times.</button>'
+        })
+
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                message: "Hello World",
+                messages: ["A", "B", "C"],
+                counter: 0,
+                inputText: "",
+                count:0
+            },
+            // beforeUpdate() {
+            //     console.log("before updated")
+            // },
+            // updated() {
+            //     console.log("updated")
+            // },
+            // beforeDestroy() {
+            //     console.log("before destroy")
+            // },
+            // destroy() {
+            //     console.log("destroy")
+            // },
+
+            methods:{
+                tambahSatu(){
+                   this.counter++;
+                },
+                counting(){
+                    this.count++;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
